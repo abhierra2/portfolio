@@ -3,6 +3,7 @@ import Link from 'next/link'
 const links = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
+  { href: '/#contact', label: 'Contact' },
 ]
 
 export default function Navigation() {
@@ -14,7 +15,7 @@ export default function Navigation() {
             href="/"
             className="font-serif text-lg font-bold text-gray-900 transition-colors hover:text-accent"
           >
-            Abhijeeth Erra
+            Abhi Erra
           </Link>
           <ul className="flex gap-8">
             {links.map(({ href, label }) => (

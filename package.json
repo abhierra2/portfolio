@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/debug-swc.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/is-prop-valid": "^1.4.0",
     "framer-motion": "^11.18.2",
-    "next": "^16.1.6",
+    "next": "14.2.18",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

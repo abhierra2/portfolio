@@ -14,17 +14,15 @@ export default function Hero() {
         Data Scientist & ML Engineer
       </p>
       <h1 className="mt-2 font-serif text-4xl font-bold tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-        Abhijeeth Erra
+        Abhi Erra
       </h1>
       <p className="mt-6 max-w-2xl font-serif text-xl text-gray-700 md:text-2xl leading-relaxed">
         I build modeling systems that improve real-world infrastructure.
       </p>
       <p className="mt-8 max-w-2xl font-sans text-gray-600 leading-relaxed">
-        I work at the intersection of data, systems, and impact. My background in
-        neurobiology taught me to think in circuits and feedback loops; I now apply
-        that lens to ML pipelines, evaluation frameworks, and infrastructure that
-        has to work under real-world constraints. I care about models that are
-        interpretable, robust, and built for production.
+        I design and build data-driven systems and machine learning solutions that address
+        complex, real-world challenges. I specialize in modeling infrastructure that is not
+        only effective but also reliable, interpretable, and built for production.
       </p>
     </motion.div>
   )

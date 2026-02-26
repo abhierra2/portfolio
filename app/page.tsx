@@ -2,22 +2,29 @@ import Link from 'next/link'
 import Hero from '@/components/Hero'
 import SectionHeader from '@/components/SectionHeader'
 import ProjectCard from '@/components/ProjectCard'
+import Contact from '@/components/Contact'
 
 export default function HomePage() {
   const featuredProjects = [
     {
       title: 'ABRA',
       summary:
-        'ML pipeline for automated analysis of Auditory Brainstem Responses (ABRs) in mice: preprocessing + Convolutional Neural Network (CNN) models for automated peak finding and threshold detection. Streamlit app for batch upload and metrics/visualizations export.',
+        'A full-stack ML solution for automating the analysis of Auditory Brainstem Responses\
+         (ABRs) in mice, including data preprocessing, convolutional neural network-based peak\
+         detection, threshold analysis, and a Streamlit UI for batch uploads and visualization.',
       href: '/projects/abra',
       tags: ['Python', 'PyTorch', 'Streamlit', 'Keras', 'MLFlow','CNN', 'Neuroscience'],
+      image: '/projects/ABRA.jpg',
     },
     {
       title: 'ETA Accuracy & Route Quality Analysis',
       summary:
-        'End-to-end analytics for ETA accuracy using NYC Taxi trip data: PyTorch model, PostgreSQL, segmentation metrics, and failure-mode analysis.',
+        'An end-to-end analytics platform to evaluate and improve ETA predictions using NYC taxi\
+         trip data. Includes model development in PyTorch, PostgreSQL integration, advanced\
+         segmentation metrics, and detailed failure-mode analyses.',
       href: '/projects/taxi',
       tags: ['Python', 'PyTorch', 'PostgreSQL', 'Spark'],
+      image: '/projects/taxi.jpg',
     },
   ]
 
@@ -34,7 +41,7 @@ export default function HomePage() {
           title="Featured Projects"
           subtitle="Systems and analyses built for clarity and deployment."
         />
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 md:items-stretch">
           {featuredProjects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
@@ -49,33 +56,47 @@ export default function HomePage() {
       {/* Philosophy */}
       <section className="border-t border-gray-200/80 bg-white">
         <div className="mx-auto max-w-4xl px-6 py-16 md:py-24">
-          <SectionHeader title="On Modeling & Impact" />
+          <SectionHeader title="Philosophy on Data and Modeling" />
           <div className="space-y-6 font-sans text-gray-700 leading-relaxed">
             <p>
-              Good modeling is not about fitting curves—it is about encoding assumptions
-              explicitly, testing them, and designing systems that fail gracefully. I
-              am drawn to problems where the stakes are high and the data is messy:
-              healthcare, transportation, and public infrastructure. In those domains,
-              a model is only as good as its integration with the rest of the stack and
-              the clarity of its limitations.
+            I believe strong modeling is defined by clarity of assumptions,
+            rigorous evaluation, and systems that fail gracefully when confronted with
+            real-world complexity. I’m drawn to challenging domains like healthcare,
+            transportation, and public infrastructure, where ambiguity, messy data, and
+            high stakes demand thoughtful design.
             </p>
             <p>
-              I believe in building for the long term: documentation, evaluation
-              frameworks, and tradeoff reasoning that outlast any single model
-              version. The goal is not to impress with complexity but to deliver
-              reliable, interpretable systems that teams can trust and iterate on.
+            Rather than favoring complexity for its own sake, I prioritize:
+            <br />
+            <br />
+            <ul className="list-disc list-inside">
+              <li>Interpretable models that stakeholders can understand</li>
+              <li>Robust evaluation frameworks tied to real performance</li>
+              <li>Sustainable systems that integrate with product and infrastructure stacks</li>
+            </ul>
+            <br />
+            The goal is not just to fit data — but to build tools and systems that teams can trust and iterate on in production.
             </p>
           </div>
         </div>
       </section>
 
+      {/* Contact */}
+      <Contact />
+
       {/* Footer */}
       <footer className="border-t border-gray-200/80">
-        <div className="mx-auto max-w-4xl px-6 py-8">
+        <div className="mx-auto max-w-4xl px-6 py-8 flex flex-wrap items-center justify-between gap-4">
           <p className="font-sans text-sm text-gray-500">
-            © {new Date().getFullYear()} Abhijeeth Erra. Built with Next.js and
+            © {new Date().getFullYear()} Abhi Erra. Built with Next.js and
             Tailwind.
           </p>
+          <Link
+            href="/#contact"
+            className="font-sans text-sm text-accent transition-colors hover:underline"
+          >
+            Contact
+          </Link>
         </div>
       </footer>
     </>

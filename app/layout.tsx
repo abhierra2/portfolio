@@ -16,7 +16,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Abhijeeth Erra — Data Scientist & ML Engineer',
+  title: 'Abhi Erra — Data Scientist & ML Engineer',
   description:
     'I build modeling systems that improve real-world infrastructure. Applied ML for public impact.',
 }

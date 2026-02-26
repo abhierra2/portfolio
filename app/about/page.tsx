@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import SectionHeader from '@/components/SectionHeader'
+import Contact from '@/components/Contact'
 
 export const metadata: Metadata = {
-  title: 'About — Abhijeeth Erra',
+  title: 'About — Abhi Erra',
   description:
     'Background in neurobiology and data science. Interest in infrastructure, healthcare, and systems modeling.',
 }
@@ -27,21 +28,19 @@ export default function AboutPage() {
       <section className="mb-16">
         <SectionHeader title="Background" />
         <p className="mb-4 font-sans text-gray-700 leading-relaxed">
-          I came to data science and ML from neurobiology. That background gave me
-          a durable way of thinking: systems with many interacting parts,
-          feedback loops, and the importance of measuring the right things
-          before drawing conclusions. I am comfortable with uncertainty and
-          with building models that are explicitly approximate—then
-          designing pipelines and evaluations so that those approximations
-          are visible and improvable.
+          I came to data science and machine learning from a foundation in neurobiology, a
+          background that taught me to think in terms of systems with interacting components
+          and feedback loops. That perspective helps me focus on defining the right questions,
+          measuring the right things, and building models whose assumptions are both explicit
+          and testable. I’m comfortable with uncertainty and design models and pipelines so
+          that their limitations are visible and improvable.
         </p>
         <p className="font-sans text-gray-700 leading-relaxed">
-          I have worked on problems in healthcare (behavioral risk, clinical
-          decision support), transportation (ETA, demand, operations), and
-          infrastructure more broadly. I care about the full stack: data
-          quality, feature engineering, model choice, serving, monitoring,
-          and documentation. I prefer to own the loop from question to
-          deployed system rather than only the model in the middle.
+          I’ve worked on problems in healthcare, transportation, and infrastructure. I care
+          deeply about the entire lifecycle of an ML system — from data quality and feature
+          engineering to model choice, serving, monitoring, and documentation. I prefer owning
+          the full loop from problem definition to deployed system rather than only building
+          the model in isolation.
         </p>
       </section>
 
@@ -50,20 +49,13 @@ export default function AboutPage() {
       <section className="mb-16">
         <SectionHeader title="Interests" />
         <p className="mb-4 font-sans text-gray-700 leading-relaxed">
-          I am drawn to domains where models touch real people and real
-          infrastructure: healthcare, public transit, energy, supply chain.
-          I am interested in how we make ML systems interpretable and
-          robust, how we evaluate them fairly across populations, and
-          how we integrate them into existing workflows without
-          pretending they are infallible.
-        </p>
-        <p className="font-sans text-gray-700 leading-relaxed">
-          I think a lot about tradeoffs—between accuracy and simplicity,
-          between automation and human oversight, between speed to ship
-          and long-term maintainability. I believe in writing things
-          down: design docs, evaluation criteria, and limitations, so
-          that the next person (or the future me) can understand why
-          decisions were made.
+          I’m drawn to domains where data systems touch real people and real infrastructure,
+          including healthcare, public transit, energy, and supply chains. I focus on making
+          machine-learning systems that are interpretable, robust, and fairly evaluated across
+          different populations. I think critically about trade-offs between accuracy and
+          simplicity, automation and human oversight, and short-term speed versus long-term
+          maintainability. I believe in writing things down — whether design documents, evaluation
+          criteria, or limitations — so that decisions and reasoning remain clear to others.
         </p>
       </section>
 
@@ -72,23 +64,23 @@ export default function AboutPage() {
       <section className="mb-16">
         <SectionHeader title="Values & direction" />
         <p className="mb-4 font-sans text-gray-700 leading-relaxed">
-          I want to work on problems that have public impact. That does not
-          mean only nonprofits or government—it means choosing roles and
-          projects where the outcome improves something beyond a single
-          metric or shareholder return: patient outcomes, equitable
-          access to services, or more reliable infrastructure. I am
-          willing to trade some upside for clarity of purpose and
-          for teams that take ethics and rigor seriously.
+          I want to work on problems that have public or societal impact. That doesn’t necessarily
+          mean only in nonprofits or government — it means choosing roles and projects where
+          outcomes improve something meaningful beyond a single metric or shareholder return,
+          such as patient outcomes, equitable access to services, or more reliable infrastructure.
+          I value clarity of purpose, ethics, rigor, and teams that take those seriously.
         </p>
         <p className="font-sans text-gray-700 leading-relaxed">
-          Long term, I see myself continuing to build and lead technical
-          work in applied ML—either as an IC who owns complex systems or
-          as someone who helps shape what gets built and how it is
-          evaluated. I am not chasing the latest architecture for its
-          own sake; I am interested in systems that work in production
-          and that teams can trust.
+          Looking ahead, I see myself continuing to build and lead applied ML work — either as an
+          individual contributor owning complex systems or as someone who helps shape how teams
+          build, evaluate, and deploy them. I’m not chasing the latest algorithm for its own sake;
+          I’m focused on systems that work in production and that teams can trust.
         </p>
       </section>
+
+      <hr className="my-12 border-gray-200" />
+
+      <Contact />
 
       <footer className="pt-8">
         <Link

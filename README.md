@@ -1,4 +1,4 @@
-# Abhijeeth Erra — Portfolio
+# Abhi Erra — Portfolio
 
 Personal portfolio built with **Next.js 14** (App Router), **TypeScript**, and **Tailwind CSS**. Editorial typography, off-white background, deep blue accent, and reusable components. No UI frameworks or heavy animation libraries.
 
